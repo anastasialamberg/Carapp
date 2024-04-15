@@ -25,7 +25,7 @@ export default function AddCar({ onSave, onCancel }) {
 
     const handleClose = () => {
         setOpen(false);
-        // Tyhjennä auton tiedot suljettaessa
+
         setCar({
             brand: '',
             model: '',
@@ -64,7 +64,7 @@ export default function AddCar({ onSave, onCancel }) {
 
     return (
         <>
-            <Button onClick={handleClickOpen}>Uusi auto</Button>
+            <Button onClick={handleClickOpen}>Add Car</Button>
             <Dialog
                 open={open}
                 onClose={handleClose}>
